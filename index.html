@@ -1,0 +1,82 @@
+<!--Created by Vyanna Hill
+    Remember to download sampelstyle.css for the web format
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--utf-8 is the most common encodder used for human Language, mostly all browser used utf-8-->
+        <!--Meta makes the webpage scale to the device used, scale 1 makes the broswer normal not zoom in/out-->
+
+        <title>Vy's second page</title>
+        <link rel="stylesheet" href="index.css">
+        <!--Links the style sheet for the website externally-->
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Data 608 Module 5 </h1> 
+        </header>
+                 
+        <nav>
+            <a href="https://vy4thewin.github.io/">Home</a> |
+          
+        </nav>
+        <!--There will only be one page where both functions will run-->
+
+        <aside>
+            
+            <label for="welcome"></label> 
+            <label for="email" id="label">Email</label>
+            <input type="email" id="email" name="email" placeholder="user@albany.edu" required>
+             <br><button id="btnLog" class="button">Log In</button>   
+           
+                        
+            
+            <br><button id="btnCC" class="button">View CC'D threads</button>
+
+        </aside>
+            <!--Will connect users to a login page to retrieve their verison of the text file-->
+
+
+
+        <section>
+        <h2> Intro to javascript</h2>
+        <p>ESUM is a great solution to cut down on the cluttter of large email threads. 
+        <br> As many email providers catch up accessbility improvements in their email appearance 
+        <br> ESUM will boost the visibility by:
+        <br>
+            <ul>
+                <li>Increasing spacing inbetween threads</li>
+                <li>Deleting repetive signatures </li>
+                <li>Email threads Styled in chat messaging format</li>
+            </ul>
+        </p>   
+    
+        <section>
+        <h2>New thread to analyze? </h2>
+        <p>
+        Upload your Email file below
+                   
+                <form action ="Linktoservernodejs/file_upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="Emaillog"/>
+                <br>
+                <input type="submit" value="Upload">
+                </form>
+                <!--NODEjs way of submitting forms to the database, express server will listen for input-->
+                <small>How to transfer your email log to a file? Check our <a href="faq.html">FAQ</a> </small>
+                <!--Sends confused users to FAQ on how to create text file-->
+        </p>    
+        </section>
+
+        
+    <script src="index.js"></script>
+    </body>
+
+    <footer>
+        <small>There is no database connection for this assignment, all values are temporary</small>
+    </footer>
+
+</html>

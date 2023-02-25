@@ -1,0 +1,113 @@
+/*
+By: Vyanna Hill
+Style sheet for module 5's hw. Reusing a style sheet from a previous project I created
+*/
+
+/* Header*/
+header{
+    padding:28px;
+    text-align:center;
+    background:papayawhip;
+    border-radius: 25px;
+    color:black;
+    font-size:20px;
+    font-family:monospace;
+}
+body{
+    background: snow;
+}
+/*Wanted the entire website base color to be Floral white*/
+
+/*Nagivation bar */
+nav{
+    Padding:5px;
+    text-align:center;
+    background:snow;
+    color:black;
+    font-size:15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Section*/
+section{
+    padding:11px;
+    text-align:left;
+    background:blanchedalmond;
+    border-radius: 25px;
+    font-size:18px;
+    font-family: monospace;
+
+}
+
+aside{
+    padding-left:11px;
+    padding-right:11px;
+    padding-top:11px;
+    padding-bottom: 11px;
+    margin-left: 11px;
+    text-align:justify;
+    border-radius: 25px;
+    font-size: medium;
+    float:right;
+    width:30%;
+    background:floralwhite;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+footer{
+    padding:28px;
+    text-align:center;
+    background:floralwhite;
+    border-radius: 25px;
+    color:black;
+    font-size:11px;
+    font-family:monospace;
+}
+ 
+p{
+    margin-bottom: 1em;
+    text-align: justify;
+}
+/*Increases spacing between paragraphs for users*/
+
+
+.h2{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 1em;
+}
+a:hover{
+    font-size: 137%;
+    color:black;
+}
+
+a:visited{
+    color:maroon;
+}
+
+.button{
+    border-radius: 12px;
+    background-color: burlywood;
+    font-family: 12px;
+    padding: 16px;
+    color:white;
+    transition-duration: 0.4s;
+    margin: 10px;
+}
+.button:hover{
+    background-color:bisque;
+    color:black;
+}
+.button:active{
+    transform:translateY(2px);
+    background-color: bisque;
+    box-shadow: 0 3px burlywood;
+}
+.wrapper label{
+    display:block;
+    margin:0.3em auto;
+}
+.wrapper label input{
+    font-size: 10px;
+    padding:0.3em;
+}
