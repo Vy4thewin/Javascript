@@ -26,39 +26,44 @@
         </nav>
         <!--There will only be one page where both functions will run-->
 
-        <aside>
-            
+
+        <section>
+            <h2> Intro to javascript</h2>
+            <p>For the first part of the assignment, we can reverse any word given by the user. 
+            <br> Any reactivity betweent the user and the page will be through Javascript! Javascript is the connector in enacting our "backend" of the html page.
+            <br>
+            </p>   
+        </section>
+        <!--For all items that will receive a update or values to use,we will give it an ID to reference in the javascript portion-->
+
+        <section>
             <h3>Reserve a word!</h3> 
             <label for="word" id="label">Word to reverse</label>
             <input type="text" id="wrdverse" name="Word to reverse" placeholder="hello" required>
              <br><button id="btnRev" class="button">Reverse my word</button>  
              <p id="rans"></p> 
 
-        </aside>
-            <!--Will connect users to a login page to retrieve their verison of the text file-->
-
-
+        </section>
 
         <section>
-        <h2> Intro to javascript</h2>
-        <p>For the first part of the assignment, we can reverse any word given by the user. 
-        <br> Any reactivity betweent the user and the page will be through Javascript! Javascript is the connector in enacting our "backend" of the html page.
-        <br>
-        </p>   
-    
+            <h3>Table of Multiplies</h3>
+            <input type="number" id="tab" name="Multiplies of... " placeholder="1" required>
+            <br><button id="btnTab" class="button">Find Multiples</button>  
+            <table id="tables"></table>
+
+        </section>
+
         <section>
-        <h2>New thread to analyze? </h2>
+        <h3>Downloading csv data </h3>
         <p>
-        Upload your Email file below
+        Upload the csv below to
                    
-                <form action ="Linktoservernodejs/file_upload" method="POST" enctype="multipart/form-data">
-                <input type="file" name="Emaillog"/>
+                <form id="File_sub">
+                <input type="file" id="data" name="csv"/>
                 <br>
                 <input type="submit" value="Upload">
                 </form>
-                <!--NODEjs way of submitting forms to the database, express server will listen for input-->
-                <small>How to transfer your email log to a file? Check our <a href="faq.html">FAQ</a> </small>
-                <!--Sends confused users to FAQ on how to create text file-->
+
         </p>    
         </section>
 
